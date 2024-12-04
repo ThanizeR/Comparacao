@@ -15,7 +15,7 @@ def predict_malaria(img):
     img = np.asarray(img)
     img = img.reshape((1,36,36,3))
     img = img.astype(np.float64)
-    model = load_model("Streamlit /malaria.h5")
+    model = load_model("malaria.h5")
     pred_probs = model.predict(img)[0]
     pred_class = np.argmax(pred_probs)
     pred_prob = pred_probs[pred_class]
@@ -27,7 +27,7 @@ def predict_pneumonia(img):
     img = np.asarray(img)
     img = img.reshape((1,36,36,1))
     img = img / 255.0
-    model = load_model("Streamlit /pneumonia.h5")
+    model = load_model("pneumonia.h5")
     pred_probs = model.predict(img)[0]
     pred_class = np.argmax(pred_probs)
     pred_prob = pred_probs[pred_class]

@@ -1,0 +1,6 @@
+gradio==3.29.0  # ou a versão mais recente compatível
+numpy==1.26.0  # Compativel com tensorflow
+Pillow==9.5.0  # Para manipulação de imagens
+tensorflow==2.16.1  # Para carregamento de modelos Keras e execução de previsões
+keras==3.0.0  # Versão compatível com tensorflow 2.16.1
+scikit-learn==1.2.2  # Para carregar o modelo de diabetes via pickle
